@@ -41,7 +41,7 @@ resource "aws_instance" "blog" {
   }
 }
 
-odule "alb" {
+module "alb" {
   source  = "terraform-aws-modules/alb/aws"
   version = "~> 6.0"
 
