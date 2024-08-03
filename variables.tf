@@ -10,7 +10,7 @@ variable "ami_filter" {
     owner = string
   })
 
-  default {
+  default = {
   name = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
   owners = "979382823631" # Bitnami
   }
@@ -23,7 +23,7 @@ variable "environment" {
     network_prefix = string
   })
 
-  default {
+  default = {
   name = "dev"
   network_prefix = "10.0"
   }
